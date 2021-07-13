@@ -13,11 +13,11 @@
     "format": "prettier --write \"{src, test}/**/*.ts\" --single-quote --trailing-comma es5",
     "lint": "tslint --force --format verbose \"src/**/*.ts\"",
     "build": "tsc --pretty",
-    "coverage": "jest --coverage",
+    "coverage": "jest --coverage ./dist/test",
     "copy-files": "copyfiles areacodes-uk.json dist/src",
     "prepublishOnly": "npm run build",
     "prebuild": "npm run clean && npm run format && npm run lint && npm run copy-files && echo using Typescript && tsc --version",
-    "test": "jest"
+    "test": "jest --verbose ./dist/test"
   },
   "author": "eharrow",
   "license": "MIT",
