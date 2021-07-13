@@ -1,7 +1,12 @@
 {
   "name": "uk-areacodes",
   "version": "1.0.2",
+  "homepage": "https://github.com/eharrow/uk-areacodes",
   "description": "Lookup a UK STD area code to place name",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/eharrow/uk-areacodes"
+  },
   "main": "./dist/src/UKAreaCodeLookup.js",
   "scripts": {
     "clean": "rimraf dist && rimraf coverage",
@@ -14,8 +19,8 @@
     "prebuild": "npm run clean && npm run format && npm run lint && npm run copy-files && echo using Typescript && tsc --version",
     "test": "jest"
   },
-  "author": "",
-  "license": "ISC",
+  "author": "eharrow",
+  "license": "MIT",
   "devDependencies": {
     "@types/jest": "^26.0.24",
     "@types/node": "^16.3.0",
