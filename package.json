@@ -1,6 +1,6 @@
 {
   "name": "uk-areacodes",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Lookup a UK STD area code to place name",
   "main": "./dist/src/UKAreaCodeLookup.js",
   "scripts": {
