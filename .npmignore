@@ -1,0 +1,8 @@
+# we need the dist#
+!dist
+
+# don't need these though
+src/
+test
+/*.json
+/*.csv
