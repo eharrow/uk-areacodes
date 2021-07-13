@@ -8,4 +8,12 @@ export class UKAreaCodeLookup {
 
     return hit ? hit.area : undefined;
   }
+
+  startsWith(phonenumber: string): string {
+    const hit = data.find((element: { code: string }) =>
+      phonenumber.startsWith(element.code)
+    );
+
+    return hit ? hit.area : undefined;
+  }
 }
